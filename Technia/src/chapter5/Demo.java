@@ -37,3 +37,16 @@ public class Demo {
 		
 	}
 }
+
+/***************OUTPUT****************
+emp1 is a instanceof Object
+emp1 is a instanceof Employee
+mgr1 is a instanceof Employee
+mgr1 is a instanceof Manager
+mgr2 is a inctanceof Employee
+mgr2 is a instanceof Manager
+1000.0
+abc
+2000.0
+1000.0
+*/
