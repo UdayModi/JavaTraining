@@ -1,7 +1,7 @@
 package chapter5;
 
 public class Employee {
-	private int id;
+	//private int id;
 	private String name;
 	protected float basicSal;
 	
@@ -26,5 +26,18 @@ public class Employee {
 		this.basicSal = basicSal;
 	}
 	
-	
+	@Override
+	public boolean equals(Object obj) {
+		if(this.name.equals(((Employee)obj).name)){
+			return true;
+		}
+		return false;
+	}
+	@Override
+	public int hashCode() {
+		return this.name.charAt(0);
+	}
+	void test(){
+		System.out.println("test from employee");
+	}
 }

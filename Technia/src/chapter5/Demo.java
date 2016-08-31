@@ -34,19 +34,9 @@ public class Demo {
 		System.out.println(emp2.getName());
 		System.out.println(mgr1.getBasicSal());
 		System.out.println(mgr2.getBasicSal());
-		
+		emp1.test();
+		emp2.test();
+		mgr1.test(); // late binding
+		mgr2.test();
 	}
 }
-
-/***************OUTPUT****************
-emp1 is a instanceof Object
-emp1 is a instanceof Employee
-mgr1 is a instanceof Employee
-mgr1 is a instanceof Manager
-mgr2 is a inctanceof Employee
-mgr2 is a instanceof Manager
-1000.0
-abc
-2000.0
-1000.0
-*/
